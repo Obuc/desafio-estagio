@@ -1,6 +1,6 @@
-<div style="display: flex; justify-content: center">
+<p align="center">
   <img src="logoObuc.png" alt="drawing" style="width:200px;"/>
-</div>
+</p>
 <br>
 
 # 🤓 Desafio estágio Obuc
