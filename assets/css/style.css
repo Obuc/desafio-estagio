@@ -244,6 +244,7 @@ ul{
 .menuIndex ul a:hover{
     background: #00556d;
     color: #ffc942;
+    border-bottom: 2px solid #d25e00;
 }
 
 /* texto index */
