@@ -226,7 +226,8 @@ ul{
 
 .menuIndex ul a{
     font-size: 0.9em;
-    padding: 7px;
+    padding: 15px;
+    margin: 0;
     display: block;
     line-height: 30px;
     color: #ffff9e;
@@ -236,17 +237,40 @@ ul{
     text-transform: uppercase;
 }
 
+.menuIndex li a.origem{
+    border:none;
+}
+
 .menuIndex ul a:hover{
     background: #00556d;
     color: #ffc942;
 }
+
+/* texto index */
 
 h3{
     padding: 20px;
     text-decoration: underline;
 }
 
+
 p{
     border-bottom: 2px solid #d25e00;
     padding-bottom: 20px ;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 999px){
+    .menuIndex{
+        position: absolute;
+        top: 8vh;
+        left: 150px;
+        width: 50vw;
+        height: 999px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        display: block;
+    }
 }
