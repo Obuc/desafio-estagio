@@ -188,13 +188,13 @@ ul{
     background: #00280b;
     text-align: center;
     justify-content: center;
-    width: 150px;
+    width: 200px;
     border: 2px solid #d25e00;
 }
 
 .menu ul a{
     font-size: 0.9em;
-    padding: 3px;
+    padding: 7px;
     display: block;
     line-height: 30px;
     color: #ffff9e;
@@ -204,9 +204,14 @@ ul{
     text-transform: uppercase;
 }
 
+.menu li a.origem{
+    border:none;
+}
+
 .menu ul a:hover{
     background: #00556d;
     color: #ffc942;
+    border-bottom: 2px solid #d25e00;
 }
 
 /* menu index */
