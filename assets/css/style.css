@@ -1,0 +1,252 @@
+/* configuracoes gerais */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffff9e;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+    background-color: #00556d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/* configuracoes das metas */
+
+.metas{
+    width: 100%;
+    max-width: 400px;
+    width: 100%;
+    padding: 25px;
+    border-radius: 5px;
+    background: #00280b;
+    opacity: 0.9;
+    border: 2px solid #d25e00;
+}
+
+.metas header{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+/* configuracao do input */
+
+.metas .campoInput{
+    margin: 20px 0;
+    width: 100%;
+    display: flex;
+    height: 45px;
+}
+
+.campoInput input{
+    width: 85%;
+    height: 100%;
+    outline: none;
+    border: 1px solid #300b15;
+    border-radius:3px;
+    font: bold;
+    padding-left: 15px;
+    transition: all 0.3s;
+    color: #1b1507;
+}
+
+.campoInput input:focus{
+    border-color: #fff;
+    border: 10px;
+}
+
+.campoInput button{
+    width: 90px;
+    height: 100%;
+    border: none;
+    color: #ffff9e;
+    background: #d25e00;
+    margin-left: 5px;
+    font: bold;
+    cursor: pointer;
+    border-radius: 3px;
+    pointer-events: none;
+    transition: all 0.3s;
+}
+
+.campoInput button.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.campoInput button.active:hover{
+    background: #00556d;
+    color: #ffc942;
+}
+
+/* configurar a lista de metas */
+
+.metas .listaMetas{
+    overflow-y: auto;
+    height: 380px;
+}
+
+.listaMetas li{
+    padding: 10px 15px;
+    position: relative;
+    list-style: none;
+    margin-bottom: 8px;
+    background: #d25e00;
+    border-radius: 3px;
+    cursor: auto;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.listaMetas li:hover .icon{
+    right: 0;
+}
+
+.listaMetas li .icon {
+    position: absolute;
+    right: -45px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 40px;
+    width: 45px;
+    background: #00556d;
+    color: #ffff9e;
+    text-align: center;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: all 0.2s;
+    border-radius: 0 3px 3px 0;
+}
+
+/* footer */
+
+.metas .footer{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer button{
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    color: #f3eae8;
+    font-weight: 400;
+    font: bold;
+    margin-left: 5px;
+    background: #d25e00;
+    cursor: pointer;
+    pointer-events: none;
+    user-select: none;
+    transition: all 0.3s;
+}
+
+.footer button.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.footer button.active:hover{
+    background: #00556d;
+    color: #ffc942;
+}
+
+/* menu metas */
+
+#container{
+    margin: 0 auto;
+}
+
+img{
+    width: auto;
+    height: 100px;
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+ul{
+    list-style: none;
+}
+
+.menu{
+    position: relative;
+    float: left;
+    margin: -600px 0 20px -250px;
+    background: #00280b;
+    text-align: center;
+    justify-content: center;
+    width: 150px;
+    border: 2px solid #d25e00;
+}
+
+.menu ul a{
+    font-size: 0.9em;
+    padding: 3px;
+    display: block;
+    line-height: 30px;
+    color: #ffff9e;
+    text-decoration: none;
+    border-bottom: 2px solid #d25e00;
+    font: bold;
+    text-transform: uppercase;
+}
+
+.menu ul a:hover{
+    background: #00556d;
+    color: #ffc942;
+}
+
+/* menu index */
+
+.menuIndex{
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+    background: #00280b;
+    text-align: center;
+    justify-content: center;
+    width: 850px;
+    border: 2px solid #d25e00;
+    height: 550px;
+}
+
+.menuIndex ul a{
+    font-size: 0.9em;
+    padding: 7px;
+    display: block;
+    line-height: 30px;
+    color: #ffff9e;
+    text-decoration: none;
+    border-bottom: 2px solid #d25e00;
+    font: bold;
+    text-transform: uppercase;
+}
+
+.menuIndex ul a:hover{
+    background: #00556d;
+    color: #ffc942;
+}
+
+h3{
+    padding: 20px;
+    text-decoration: underline;
+}
+
+p{
+    border-bottom: 2px solid #d25e00;
+    padding-bottom: 20px ;
+}
