@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow: hidden;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    background-color: #ececec;
+}
+
+header {
+    background-color: #1a374c;
+    color: white;
+    padding: 10px 20px;
+    border-bottom: 2px solid #5a7384;
+}
+
+header h1 {
+    font-size: 24px;
+    font-style: italic;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.sidebar {
+    background-image: linear-gradient(to bottom, #275777, #317199, #4eb6f4);
+    height: 100vh;
+    width: 400px;
+    float: left;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar a:link, .sidebar a:visited {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    background-color: #1a374c;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 2px;
+    width: 100%;
+    border-left: 2px solid transparent;
+    transition: all 0.5s;
+}
+
+.sidebar a:hover {
+    border-left: 2px solid white;
+}
+
+.metas-section {
+    background-color: white;
+    margin: 40px 40px 100px 40px;
+    width: 98vw;
+    box-shadow: 1px 1px 4px gray;
+}
+
+.metas {
+    margin: 30px;
+    width: 400px;
+    height: 200px;
+    padding: 30px;
+}
+
+.meta-input {
+    width: 93%;
+    padding-left: 5px;
+    border-radius: 3px;
+}
+
+.meta-input, .input-button {
+    background-color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.input-button {
+    width: 6%;
+    height: 15%;
+    background-image: url('../img/plus-icon.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    float: right;
+}
+
+.metas-list {
+    list-style: none;
+    padding: 0;
+}
+
+.metas-list li {
+    border: 1px outset gray;
+    box-shadow: 1px 1px px gray;
+    margin: 2px 0px 2px 0px;
+    padding-left: 5px;
+    border-radius: 3px;
+}
+
+.metas-list button {
+    width: 8%;
+    height: 100%;
+    background-color: white;
+    border: none;
+    float: right;
+}
+
+.trash-btn {
+    width: 100%;
+}
+
+.row {
+    content: "";
+    display: block;
+    clear: both;
+}
