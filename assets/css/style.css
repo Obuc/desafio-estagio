@@ -1,0 +1,212 @@
+/* configuracoes gerais */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    width: 2800px;
+}
+
+body{
+    background-color: #ececec;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: #1a374c;
+    color: white;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+    font-style:italic;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+header a:visited {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+/* menu */
+
+img{
+    width: 200px;
+    height: 200px;
+    text-justify: center;
+    text-align: center;
+    display: block;
+    flex-direction: column;
+    margin: auto;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+.menu{
+    float: left;
+    width: 300px;
+    height: 1200px;
+    background-image: linear-gradient(#275777, #317199, #4eb6f4);
+    display: flex; 
+    flex-direction: column;
+} 
+
+.menu ul a{
+    padding: 10px 20px;
+    line-height: 40px;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #1a374c;
+    width: 100%;
+    border-bottom: 2px solid transparent;
+}
+
+.menu ul a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+.menu ul a:hover{
+    border-left: 2px solid white;
+}
+
+.menu ul li{
+    border-bottom: 5px solid transparent;
+}
+
+/* configuracoes das metas */
+
+.metas{
+    background-color: white;
+    margin: 50px 50px 50px 50px;
+    width: 1540px;
+    height: 800px;
+    padding: 25px;
+    float: left;
+    box-shadow: 1px 1px 1px 1px rgb(136, 136, 136);
+    border-radius: 3px;
+    color: #317199;
+}
+
+.metas div{
+    font-size: 20px;
+    font-weight: 100px;
+}
+
+/* configuracao do input */
+
+.metas .campoInput{
+    width: 100%;
+    display: flex;
+    height: 45px;
+}
+
+.campoInput input{
+    width: 28%;
+    color: #317199;
+    margin: 5px;
+    padding-left: 5px;
+    border-radius: 3px;
+}
+
+.campoInput button{
+    cursor: pointer;
+    border-radius: 3px;
+    color: #317199;
+    pointer-events: none;
+    transition: all 0.4s;
+}
+
+.campoInput button.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#add{
+    position: absolute;
+    left: 798px;
+    top: 146.5px;
+    background-color: white;
+    color: #317199;
+    font-size: 30px;
+    width: 35px;
+    height: 35px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+#add:hover{
+    background-color: #275777;
+}
+
+/* configurar a lista de metas */
+
+.metas .listaMetas{
+    height: 480px;
+    padding: 0;
+    margin: 0;
+}
+
+.listaMetas li{
+    margin: 0px 0px 0px 5px;
+    padding: 4px 4px 4px 10px;
+    width: 30.5%;
+    height: auto;
+    list-style: none;
+    word-wrap: break-word;
+    border: 1px outset gray;
+    border-radius: 2px;
+    text-align: justify;
+}
+
+.listaMetas li .icon {
+    height: 25px;
+    width: 25px;
+    padding: 5px 5px;
+    cursor: pointer;
+    float: right;
+}
+
+/* footer */
+
+.metas .footer{
+    height: auto;
+    display: flex;
+    width: 100%;
+    margin-top: auto;
+    align-items: center;
+    justify-content: space-between;
+    float: inline-end;
+    font-weight: bold;
+}
+
+.footer button{
+    padding: 6px 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+    color: #317199;
+    font-weight: 400;
+    cursor: pointer;
+    pointer-events: none;
+    user-select: none;
+    transition: all 0.4s;
+    background-color: white;
+}
+
+.footer button.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.footer button.active:hover{
+    background-color: #275777;
+}
