@@ -210,19 +210,3 @@ ul{
 .footer button.active:hover{
     background-color: #275777;
 }
-
-/* RESPONSIVO */
-
-@media (max-width: 999px){
-    .menuIndex{
-        position: absolute;
-        top: 8vh;
-        left: 150px;
-        width: 50vw;
-        height: 999px;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        display: block;
-    }
-}
