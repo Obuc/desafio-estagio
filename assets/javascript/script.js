@@ -16,15 +16,6 @@ inputBox.onkeyup = () =>{
     }
 }
 
-// utilizar o enter como click
-
-document.addEventListener("keypress", function(e){
-    if(e.key === "Enter"){
-        const btn = document.querySelector("#add");
-
-        btn.click();
-    }
-})
 
 mostrarMetas(); // chamando a funcao
 
@@ -60,10 +51,7 @@ function mostrarMetas(){
     }
     let newLiTag = "";
     listArray.forEach((element, index) =>{
-        newLiTag += `<li>
-        <label>
-        <input type="checkbox" class="check">
-        </label>${element} <span class="icon" onclick="apagarMeta(${index})">X</li>`;
+        newLiTag += `<li>${element} <span onclick="apagarMeta(${index})"><img src="assets/imagens/trash.png" class="icon";></li>`;
     });
     listaMetas.innerHTML = newLiTag; //adiciona a nova meta na lista
     inputBox.value = ""; // deixa o campo em branco após adicionar uma nova tarefa

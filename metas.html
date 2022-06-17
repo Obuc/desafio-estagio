@@ -4,17 +4,33 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sua agenda - OBUC</title>
+        <title>Suas metas - OBUC</title>
         <link rel="stylesheet" href="assets/css/style.css">
+        <script src="[YOUR_KIT_CODE]" crossorigin="anonymous"></script>
     </head>
     <body>    
         <div id="container">
+            <header>
+                <p><a href="https://www.obuc.com.br/" target="blank">Teste Obuc</a></p>
+            </header>
+            <!--Menu de páginas-->
+            <div class="menu">
+                <nav>                
+                    <ul>
+                        <li><a href="">Cadastro de metas</a></li>
+                        <li><a href="">Cadastro de áreas</a></li> 
+                        <li><a href="">Cadastro de origens</a></li>
+                        <li><a href="" class="">Cadastro de habilidades</a></li>
+                    </ul>
+                </nav>
+                <img src="assets/imagens/logoObuc.png">
+            </div>
             <!--Lista de metas-->
             <div class="metas">
-                <header>METAS</header>
+                <div>Meta:</div>
                 <div class="campoInput">
                     <input type="text" placeholder="Adicione uma nova meta">
-                    <button id="add">Adicionar</button>
+                    <button id="add">+</button>
                 </div>
                 <div>
                     <ul class="listaMetas">
@@ -23,23 +39,8 @@
                         <span>Você têm <span class="metaPendente"></span> meta para completar</span>
                         <button>Limpar tudo</button>
                     </footer>
-                </div>
-                
-            </div>
-
-            <!--Menu de páginas-->
-            <div class="menu">
-                <nav>
-                    <h2>TESTE OBUC</h2>
-                    <a href="index.html"><img src="assets/imagens/logoObuc.png"></a> 
-                    <ul>
-                        <li><a href="">Metas</a></li>
-                        <li><a href="">Areas</a></li> 
-                        <li><a href="">Habilidades</a></li>
-                        <li><a href="" class="origem">Origens</a></li>
-                    </ul>
-                </nav>
-            </div>
+                </div>         
+            </div>          
         </div>
         <script src="assets/javascript/script.js"></script>
     </body>

@@ -3,77 +3,127 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #ffff9e;
+}
+
+#container{
+    width: 2800px;
 }
 
 body{
+    background-color: #ececec;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: #1a374c;
+    color: white;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+    font-style:italic;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+header a:visited {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+/* menu */
+
+img{
+    width: 200px;
+    height: 200px;
+    text-justify: center;
+    text-align: center;
+    display: block;
+    flex-direction: column;
+    margin: auto;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+.menu{
+    float: left;
+    width: 300px;
+    height: 1200px;
+    background-image: linear-gradient(#275777, #317199, #4eb6f4);
+    display: flex; 
+    flex-direction: column;
+} 
+
+.menu ul a{
+    padding: 10px 20px;
+    line-height: 40px;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #1a374c;
     width: 100%;
-    min-height: 100vh;
-    padding: 10px;
-    background-color: #00556d;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
+    border-bottom: 2px solid transparent;
+}
+
+.menu ul a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+.menu ul a:hover{
+    border-left: 2px solid white;
+}
+
+.menu ul li{
+    border-bottom: 5px solid transparent;
 }
 
 /* configuracoes das metas */
 
 .metas{
-    width: 100%;
-    max-width: 400px;
-    width: 100%;
+    background-color: white;
+    margin: 50px 50px 50px 50px;
+    width: 1540px;
+    height: 800px;
     padding: 25px;
-    border-radius: 5px;
-    background: #00280b;
-    opacity: 0.9;
-    border: 2px solid #d25e00;
+    float: left;
+    box-shadow: 1px 1px 1px 1px rgb(136, 136, 136);
+    border-radius: 3px;
+    color: #317199;
 }
 
-.metas header{
-    font-size: 30px;
-    font-weight: 500;
+.metas div{
+    font-size: 20px;
+    font-weight: 100px;
 }
 
 /* configuracao do input */
 
 .metas .campoInput{
-    margin: 20px 0;
     width: 100%;
     display: flex;
     height: 45px;
 }
 
 .campoInput input{
-    width: 85%;
-    height: 100%;
-    outline: none;
-    border: 1px solid #300b15;
-    border-radius:3px;
-    font: bold;
-    padding-left: 15px;
-    transition: all 0.3s;
-    color: #1b1507;
-}
-
-.campoInput input:focus{
-    border-color: #fff;
-    border: 10px;
+    width: 28%;
+    color: #317199;
+    margin: 5px;
+    padding-left: 5px;
+    border-radius: 3px;
 }
 
 .campoInput button{
-    width: 90px;
-    height: 100%;
-    border: none;
-    color: #ffff9e;
-    background: #d25e00;
-    margin-left: 5px;
-    font: bold;
     cursor: pointer;
     border-radius: 3px;
+    color: #317199;
     pointer-events: none;
-    transition: all 0.3s;
+    transition: all 0.4s;
 }
 
 .campoInput button.active{
@@ -81,74 +131,75 @@ body{
     pointer-events: auto;
 }
 
-.campoInput button.active:hover{
-    background: #00556d;
-    color: #ffc942;
+#add{
+    position: absolute;
+    left: 798px;
+    top: 146.5px;
+    background-color: white;
+    color: #317199;
+    font-size: 30px;
+    width: 35px;
+    height: 35px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+#add:hover{
+    background-color: #275777;
 }
 
 /* configurar a lista de metas */
 
 .metas .listaMetas{
-    overflow-y: auto;
-    height: 380px;
+    height: 480px;
+    padding: 0;
+    margin: 0;
 }
 
 .listaMetas li{
-    padding: 10px 15px;
-    position: relative;
+    margin: 0px 0px 0px 5px;
+    padding: 4px 4px 4px 10px;
+    width: 30.5%;
+    height: auto;
     list-style: none;
-    margin-bottom: 8px;
-    background: #d25e00;
-    border-radius: 3px;
-    cursor: auto;
-    overflow: hidden;
     word-wrap: break-word;
-}
-
-.listaMetas li:hover .icon{
-    right: 0;
+    border: 1px outset gray;
+    border-radius: 2px;
+    text-align: justify;
 }
 
 .listaMetas li .icon {
-    position: absolute;
-    right: -45px;
-    top: 50%;
-    transform: translateY(-50%);
-    height: 40px;
-    width: 45px;
-    background: #00556d;
-    color: #ffff9e;
-    text-align: center;
-    padding: 10px 15px;
+    height: 25px;
+    width: 25px;
+    padding: 5px 5px;
     cursor: pointer;
-    transition: all 0.2s;
-    border-radius: 0 3px 3px 0;
+    float: right;
 }
 
 /* footer */
 
 .metas .footer{
+    height: auto;
     display: flex;
     width: 100%;
-    margin-top: 20px;
+    margin-top: auto;
     align-items: center;
     justify-content: space-between;
+    float: inline-end;
+    font-weight: bold;
 }
 
 .footer button{
     padding: 6px 10px;
-    border: none;
+    border: 1px solid black;
     border-radius: 4px;
-    outline: none;
-    color: #f3eae8;
+    color: #317199;
     font-weight: 400;
-    font: bold;
-    margin-left: 5px;
-    background: #d25e00;
     cursor: pointer;
     pointer-events: none;
     user-select: none;
-    transition: all 0.3s;
+    transition: all 0.4s;
+    background-color: white;
 }
 
 .footer button.active{
@@ -157,112 +208,7 @@ body{
 }
 
 .footer button.active:hover{
-    background: #00556d;
-    color: #ffc942;
-}
-
-/* menu metas */
-
-#container{
-    margin: 0 auto;
-}
-
-img{
-    width: auto;
-    height: 100px;
-    float: none;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    
-}
-
-ul{
-    list-style: none;
-}
-
-.menu{
-    position: relative;
-    float: left;
-    margin: -600px 0 20px -250px;
-    background: #00280b;
-    text-align: center;
-    justify-content: center;
-    width: 200px;
-    border: 2px solid #d25e00;
-}
-
-.menu ul a{
-    font-size: 0.9em;
-    padding: 7px;
-    display: block;
-    line-height: 30px;
-    color: #ffff9e;
-    text-decoration: none;
-    border-bottom: 2px solid #d25e00;
-    font: bold;
-    text-transform: uppercase;
-}
-
-.menu li a.origem{
-    border:none;
-}
-
-.menu ul a:hover{
-    background: #00556d;
-    color: #ffc942;
-    border-bottom: 2px solid #d25e00;
-}
-
-/* menu index */
-
-.menuIndex{
-    position: relative;
-    float: left;
-    margin: 0;
-    padding: 0;
-    background: #00280b;
-    text-align: center;
-    justify-content: center;
-    width: 850px;
-    border: 2px solid #d25e00;
-    height: 615px;
-}
-
-.menuIndex ul a{
-    font-size: 0.9em;
-    padding: 15px;
-    margin: 0;
-    display: block;
-    line-height: 30px;
-    color: #ffff9e;
-    text-decoration: none;
-    border-bottom: 2px solid #d25e00;
-    font: bold;
-    text-transform: uppercase;
-}
-
-.menuIndex li a.origem{
-    border:none;
-}
-
-.menuIndex ul a:hover{
-    background: #00556d;
-    color: #ffc942;
-    border-bottom: 2px solid #d25e00;
-}
-
-/* texto index */
-
-h3{
-    padding: 20px;
-    text-decoration: underline;
-}
-
-
-p{
-    border-bottom: 2px solid #d25e00;
-    padding-bottom: 20px ;
+    background-color: #275777;
 }
 
 /* RESPONSIVO */
